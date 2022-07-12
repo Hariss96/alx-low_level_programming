@@ -2,17 +2,22 @@
 
 /**
  * puts2 - Prints one char out of two of a string.
- * @str: The string containing characters.
+ * @str:pointer char.
+ * return:void
  */
 void puts2(char *str)
 {
-	int index, len = 0;
+	int i, x;
+i = 0;
+x = 0;
 
-	while (str[index++])
-		len++;
-
-	for (index = 0; index < len; index += 2)
-		_putchar(str[index]);
-
-	_putchar('\n');
+	while (str[i++])
+	{
+		x++;
+	}
+for (i = 0; i < x; i += 2)
+{
+	_putchar(*(str + i));
+}
+_putchar('\n');
 }
